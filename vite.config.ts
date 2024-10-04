@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import basicSsl from '@vitejs/plugin-basic-ssl';
+// import basicSsl from '@vitejs/plugin-basic-ssl';
 
 export default defineConfig({
   base: '/typescript-template',
@@ -10,7 +10,7 @@ export default defineConfig({
     tsconfigPaths(),
     // Allows using self-signed certificates to run the dev server using HTTPS.
     // https://www.npmjs.com/package/@vitejs/plugin-basic-ssl
-    basicSsl(),
+    // basicSsl(),
   ],
   build: {
     target: 'esnext',
